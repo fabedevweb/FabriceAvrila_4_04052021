@@ -908,3 +908,7 @@ h4 {
   width: 100px;
   height: 100px;
 }
+
+.col-sm-12 p {
+  margin-top: 60px;
+}
