@@ -246,7 +246,8 @@ a:hover {
   z-index: 1;
 }
 .navbar-brand {
-  height: auto;
+  height: 50px;
+  width: 245px;
   padding: 3px 15px;
   font-size: 25px;
   font-weight: 400;
