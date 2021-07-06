@@ -15,14 +15,6 @@ a:hover {
   text-decoration: none;
   cursor: pointer;
 }
-#page-loading-blocs-notifaction {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  width: 100%;
-  z-index: 100000;
-  background: #fff url(img/pageload-spinner.gif) no-repeat center center;
-}
 .bloc {
   width: 100%;
   clear: both;
@@ -84,19 +76,6 @@ a:hover {
 .d-bloc {
   color: rgba(255, 255, 255, 0.7);
 }
-.d-bloc button:hover {
-  color: rgba(255, 255, 255, 0.9);
-}
-.d-bloc .icon-round,
-.d-bloc .icon-rounded,
-.d-bloc .icon-semi-rounded-a,
-.d-bloc .icon-semi-rounded-b,
-.d-bloc .icon-square {
-  border-color: rgba(255, 255, 255, 0.9);
-}
-.d-bloc .divider-h span {
-  border-color: rgba(255, 255, 255, 0.2);
-}
 .d-bloc .a-btn,
 .d-bloc .navbar a,
 .d-bloc .navbar-brand,
@@ -112,53 +91,6 @@ a:hover {
 .d-bloc h6 a,
 .d-bloc p a {
   color: rgba(255, 255, 255, 0.6);
-}
-.d-bloc .a-btn:hover,
-.d-bloc .navbar a:hover,
-.d-bloc .navbar-brand:hover,
-.d-bloc a:hover .icon-lg,
-.d-bloc a:hover .icon-md,
-.d-bloc a:hover .icon-sm,
-.d-bloc a:hover .icon-xl,
-.d-bloc h1 a:hover,
-.d-bloc h2 a:hover,
-.d-bloc h3 a:hover,
-.d-bloc h4 a:hover,
-.d-bloc h5 a:hover,
-.d-bloc h6 a:hover,
-.d-bloc p a:hover {
-  color: #fff;
-}
-.d-bloc .navbar-toggle .icon-bar {
-  background: #fff;
-}
-.d-bloc .btn-wire,
-.d-bloc .btn-wire:hover {
-  color: #fff;
-  border-color: #fff;
-}
-.d-bloc .panel {
-  color: rgba(0, 0, 0, 0.5);
-}
-.d-bloc .panel button:hover {
-  color: rgba(0, 0, 0, 0.7);
-}
-.d-bloc .panel icon {
-  border-color: rgba(0, 0, 0, 0.7);
-}
-.d-bloc .panel .divider-h span {
-  border-color: rgba(0, 0, 0, 0.1);
-}
-.d-bloc .panel .a-btn {
-  color: rgba(0, 0, 0, 0.6);
-}
-.d-bloc .panel .a-btn:hover {
-  color: #000;
-}
-.d-bloc .panel .btn-wire,
-.d-bloc .panel .btn-wire:hover {
-  color: rgba(0, 0, 0, 0.7);
-  border-color: rgba(0, 0, 0, 0.3);
 }
 .d-bloc .panel,
 .l-bloc {
@@ -830,14 +762,6 @@ h4 {
     max-height: 40px;
     width: auto;
   }
-  .nav-invert .navbar-header {
-    float: none;
-    width: 100%;
-  }
-  .nav-invert .navbar-toggle {
-    float: left;
-    margin-left: 10px;
-  }
   .bloc {
     padding-left: 0;
     padding-right: 0;
@@ -852,58 +776,10 @@ h4 {
     padding-left: 0;
     padding-right: 0;
   }
-  .bloc-fill-screen .fill-bloc-bottom-edge,
-  .bloc-fill-screen .fill-bloc-top-edge,
-  .bloc-tile-2 .container,
-  .bloc-tile-3 .container,
-  .bloc-tile-4 .container {
-    padding-left: 0;
-    padding-right: 0;
-  }
-  .a-block {
-    padding: 0 10px;
-  }
-  .btn-dwn {
-    display: none;
-  }
-  .voffset {
-    margin-top: 5px;
-  }
-  .voffset-md {
-    margin-top: 20px;
-  }
   .voffset-lg {
     margin-top: 30px;
   }
-  form {
-    padding: 5px;
-  }
-  .close-lightbox {
-    display: inline-block;
-  }
-  .blocsapp-device-iphone5 {
-    background-size: 216px 425px;
-    padding-top: 60px;
-    width: 216px;
-    height: 425px;
-  }
-  .blocsapp-device-iphone5 img {
-    width: 180px;
-    height: 320px;
-  }
 }
-@media (max-width: 400px) {
-  .bloc {
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-@media (max-width: 767px) {
-  .bloc-mob-center-text {
-    text-align: center;
-  }
-}
-
 .col-sm-12 img {
   width: 100px;
   height: 100px;
