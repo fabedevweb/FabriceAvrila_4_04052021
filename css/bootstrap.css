@@ -131,6 +131,7 @@ p {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+  width: 90%;
 }
 .row {
   margin-right: -15px;
@@ -1249,6 +1250,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
   position: relative;
   display: block;
   padding: 10px 15px;
+  text-align: center;
 }
 
 .nav > li > a:focus,
@@ -1604,7 +1606,8 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 
 .navbar-brand > img {
-  display: block;
+  height: 40px;
+  width: 215px;
 }
 
 @media (min-width: 768px) {

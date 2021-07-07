@@ -10,16 +10,27 @@ a,
 button {
   transition: all 0.3s ease-in-out;
   outline: 0 !important;
+  text-decoration: none;
 }
 a:hover {
   text-decoration: none;
   cursor: pointer;
 }
+@media screen and (max-width: 767px) {
+  .navbar-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    justify-content: space-between;
+    width: 90%;
+  }
+}
+
 .bloc {
   width: 100%;
   clear: both;
   background: 50% 50% no-repeat;
-  padding: 0 50px;
+  padding: 22px 50px;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -67,7 +78,7 @@ a:hover {
   right: 0;
 }
 .texture-paper::before {
-  background: url(img/texture-paper.png);
+  background: url("img/texture-paper.webp");
   background-size: 280px 280px;
 }
 .b-parallax {
@@ -174,8 +185,18 @@ a:hover {
   font-size: 32px;
 }
 .navbar {
+  display: flex;
+  align-items: center;
   margin-bottom: 0;
   z-index: 1;
+}
+@media screen and (max-width: 767px) {
+  .navbar {
+    flex-wrap: wrap;
+  }
+  .navbar-nav li {
+    text-align: center;
+  }
 }
 .navbar-brand {
   height: 50px;
@@ -491,9 +512,6 @@ p {
   font-weight: 400;
   color: #575757 !important;
 }
-.container {
-  max-width: 1000px;
-}
 .hero-bloc-text {
   font-size: 38px;
 }
@@ -509,8 +527,11 @@ p {
   max-width: 520px;
   margin: auto auto auto auto;
 }
-p {
+.col-sm-12__p {
   font-size: 16px;
+  width: 90%;
+  text-align: center;
+  padding-bottom: 20px;
 }
 .tight-width-whitespace {
   max-width: 600px;
@@ -528,9 +549,26 @@ p {
   font-size: 16px;
   font-weight: 700;
 }
+.col-sm-12 img {
+  width: 100px;
+  height: 100px;
+}
+
+.col-sm-12 p {
+  margin-top: 60px;
+}
+
+.col-sm-12 {
+  text-align: center;
+}
 .social {
   max-width: 400px;
   margin: auto auto auto auto;
+  display: flex;
+  justify-content: center;
+}
+.col-sm-3 {
+  margin-right: 15px;
 }
 h2 {
   font-size: 22px;
@@ -549,8 +587,8 @@ h3 {
 }
 h1 {
   color: #333 !important;
-  margin: 0 190px;
-  padding: 50px 0;
+  padding: 50px 0 0 0;
+  text-align: center;
 }
 h4 {
   color: #333 !important;
@@ -619,13 +657,16 @@ h4 {
   border-color: #364577 !important;
 }
 .bg-dots-bg {
-  background-image: url(img/dots-bg.png);
+  background-image: url("img/dots-bg.webp");
 }
 .bg-lines-h2-bg {
-  background-image: url(img/lines-h2-bg.png);
+  background-image: url("img/lines-h2-bg.webp");
 }
 .bg-banniere {
-  background-image: url(img/la-chouette-agence-banniere.jpg);
+  background-image: url("img/la-chouette-agence-banniere.webp");
+}
+.bg-presentation {
+  background-image: url("img/Entreprise-webdesign-Lyon-présentation.webp");
 }
 @media (max-width: 1024px) {
   .bloc {
@@ -669,10 +710,6 @@ h4 {
   .page-container {
     overflow-x: hidden;
     position: relative;
-  }
-  .bloc {
-    padding-left: constant(safe-area-inset-left);
-    padding-right: constant(safe-area-inset-right);
   }
   .bloc-group,
   .bloc-group .bloc {
@@ -724,8 +761,6 @@ h4 {
     margin-top: 0;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     background: rgba(0, 0, 0, 0.05);
-    text-align: left;
-    padding-left: 15px;
     width: 100%;
   }
   .nav > li:hover {
@@ -757,6 +792,7 @@ h4 {
     overflow-x: hidden;
     -webkit-box-shadow: none;
     box-shadow: none;
+    margin: auto;
   }
   .navbar-brand img {
     max-height: 40px;
@@ -779,12 +815,4 @@ h4 {
   .voffset-lg {
     margin-top: 30px;
   }
-}
-.col-sm-12 img {
-  width: 100px;
-  height: 100px;
-}
-
-.col-sm-12 p {
-  margin-top: 60px;
 }
