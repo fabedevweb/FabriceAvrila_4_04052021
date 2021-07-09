@@ -2,8 +2,9 @@
 <html lang="fr">
 	<head>
 		<meta charset="utf-8">
-		<meta name="keywords" content="">
-		<meta name="description" content="">
+		<meta name="description" content="Nous sommes ravis que vous souhaitiez collaborer avec notre agence. 
+		Parlez-nous de votre projet en complétant le formulaire ci-dessous.">
+		<meta name="robots" content="index, follow" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 		<link rel="shortcut icon" type="image/png" href="favicon.jpg">
 		<link rel="stylesheet" type="text/css" href="style.css">
@@ -13,15 +14,11 @@
 		<title>Contact</title>
 	</head>
 	<body>
-		<main class="page-container">
-			<header class="bloc bgc-white l-bloc header__page2" id="bloc-0">
-					<nav class="navbar row navbar__page2">
-						<a class="navbar-brand navbar-brand__page2" href="index.html"><img src="img/la-chouette-agence.webp" alt="atlanta web design logo" height="40" /></a>
-						<a class="navbar__accueil navbar__accueil__page2" href="index.html">Accueil</a>
-					</nav>
-				</div>
-			</header>
-			<section class="bloc bg-dots-bg bg-repeat bgc-atomic-tangerine d-bloc bloc-bg-texture texture-paper" id="bloc-6">
+		<header class="bloc bgc-white l-bloc header__page2" id="bloc-0">
+			<nav class="navbar row navbar__page2">
+				<a class="navbar-brand navbar-brand__page2" href="index.html"><img src="img/la-chouette-agence.webp" alt="atlanta web design logo" height="40" /></a>
+			</nav>
+			<div class="bloc bg-dots-bg bg-repeat bgc-atomic-tangerine d-bloc bloc-bg-texture texture-paper" id="bloc-6">
 				<div class="container bloc-lg">
 					<div class="row">
 						<div class="col-sm-12">
@@ -35,39 +32,40 @@
 						</div>
 					</div>
 				</div>
-			</section>
-			<section class="bloc bgc-white l-bloc" id="bloc-7">
+			</div>
+		</header>
+		<main class="page-container">
+			<div class="bloc bgc-white l-bloc" id="bloc-7">
 				<div class="container bloc-lg">
 					<div class="row">
 						<div class="col-sm-6">
-							<form id="form_1" novalidate success-msg="Your message has been sent." fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
-								<div class="form-group">
+							<div id="form_1" novalidate success-msg="Your message has been sent." fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
+								<form class="form-group">
+									<p>Nom<br>
+										<input autocomplete="name" type="text" placeholder="Fabrice Avrila" id="name" class="form-control" autofocus required />
+									</p>
+								</form>
+								<form class="form-group">
+									<p>Email<br>
+										<input autocomplete="email" id="email" placeholder="fabrice.avrila@gmail.com" class="form-control" type="email" required /></p>
+								</form>
+								<form class="form-group">
 									<label>
-										Nom
+									Comment nous avez-vous connu ?<br>
 									</label>
-									<input id="name" class="form-control" required />
-								</div>
-								<div class="form-group">
-									<label>
-										Adresse email
-									</label>
-									<input id="email" class="form-control" type="email" required />
-								</div>
-								<div class="form-group">
-									<label>
-										Comment nous avez-vous connu ?
-									</label>
-									<input class="form-control" type="email" required id="input_504" />
-								</div>
-								<div class="form-group">
+									<textarea class="form-control form-control--textarea" type="text" required id="input_504">
+									</textarea>
+								</form>
+								<form class="form-group">
 									<label>
 										Brief de votre projet (Ajoutez autant de détails que nécessaire)<br>
-									</label><textarea id="message" class="form-control" rows="4" cols="50" required></textarea>
-								</div> 
+									</label>
+									<textarea id="message" class="form-control form-control--textarea" rows="4" cols="50" required></textarea>
+								</form> 
 								<button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine" type="submit">
 									Envoyer
 								</button>
-							</form>
+							</div>
 						</div>
 						<div class="col-sm-6">
 							<p>
@@ -76,38 +74,38 @@
 						</div>
 					</div>
 				</div>
-			</section>
+			</div>
 		</main>
-		<footer class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8">
+		<footer class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8" role="contentinfo">
 			<div class="container bloc-sm">
 				<div class="row">
-					<div class="col-sm-12">
-						<p class="text-center white"> La chouette agence - Agence web basée à Lyon.<br></p>
+					<div class="col-sm-12 col-sm-12--social">
+						<p class="text-center white text-center__size-p text-center__size-p--page2"> La chouette agence - Agence web basée à Lyon.<br></p>
 						<div class="row row-no-gutters social">
 							<div class="col-sm-3">
 								<div class="text-center"> 
-									<a class="social" href="index.html">
+									<a class="social access" href="https://twitter.com/home?lang=fr" aria-label="Cliquer pour nous rejoindre sur twitter">
 										<span class="fa fa-twitter icon-md"></span>
 									</a>
 								</div>
 							</div>
 							<div class="col-sm-3">
 								<div class="text-center"> 
-									<a class="social" href="index.html">
+									<a class="social access" href="https://www.facebook.com/ilemauriceinside.fr" aria-label="Cliquer pour nous rejoindre sur facebook">
 										<span class="fa fa-facebook icon-md"></span>
 									</a>
 								</div>
 							</div>
 							<div class="col-sm-3">
 								<div class="text-center"> 
-									<a class="social" href="index.html">
+									<a class="social access" href="https://dribbble.com/" aria-label="Cliquer pour nous rejoindre sur dribble">
 										<span class="fa fa-dribbble icon-md"></span>
 									</a>
 								</div>
 							</div>
 							<div class="col-sm-3">
 								<div class="text-center"> 
-									<a class="social" href="index.html">
+									<a class="social access" href="https://www.instagram.com/fabriceetmarielyne/" aria-label="Cliquer pour nous rejoindre sur instagram">
 										<span class="fa fa-instagram icon-md"></span>
 									</a>
 								</div>

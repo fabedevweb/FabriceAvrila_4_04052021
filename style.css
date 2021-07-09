@@ -195,9 +195,6 @@ a:hover {
   grid-template-columns: 2fr;
   grid-template-rows: 1fr;
 }
-.header__page2 {
-  width: 90%;
-}
 .navbar-brand__page2 {
   grid-row: 1;
   grid-column: 1;
@@ -415,6 +412,8 @@ button {
 .form-control {
   border-color: rgba(0, 0, 0, 0.1);
   box-shadow: none;
+  width: 30%;
+  color: black;
 }
 .scrollToTop {
   width: 40px;
@@ -538,7 +537,8 @@ h4,
 h5,
 h6,
 label,
-p {
+p,
+input {
   font-family: helvetica;
   font-weight: 400;
   color: #575757;
@@ -563,6 +563,8 @@ p {
   width: 90%;
   text-align: center;
   padding-bottom: 20px;
+  margin: auto;
+  color: black;
 }
 .tight-width-whitespace {
   max-width: 600px;
@@ -753,7 +755,6 @@ h4 {
   margin: auto;
 }
 .bloc-sm {
-  width: 90%;
   margin-bottom: 110px;
 }
 .size-p {
@@ -761,6 +762,9 @@ h4 {
 }
 .text-center__size-p {
   font-size: 1.8rem;
+}
+.text-center__size-p--page2 {
+  font-size: 1.2rem;
 }
 h2 {
   font-size: 3rem;
@@ -778,4 +782,16 @@ h2 {
 }
 .col-sm-12--social {
   margin-top: 90px;
+}
+.col-sm-6 {
+  margin-left: 100px;
+}
+.form-group {
+  margin-bottom: 20px;
+}
+.form-control--textarea {
+  width: 50%;
+}
+input {
+  font-size: 1rem;
 }
