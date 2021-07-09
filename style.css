@@ -415,7 +415,7 @@ button {
 .form-control {
   border-color: rgba(0, 0, 0, 0.1);
   box-shadow: none;
-  width: 30%;
+  width: 300px;
   color: black;
 }
 .scrollToTop {
@@ -702,10 +702,6 @@ h4 {
   background-image: url("img/Entreprise-webdesign-Lyon-présentation.webp");
 }
 @media (max-width: 1024px) {
-  .bloc {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
   .bloc-tile-2.full-width-bloc .container,
   .bloc-tile-3.full-width-bloc .container,
   .bloc-tile-4.full-width-bloc .container,
@@ -788,14 +784,12 @@ h2 {
 .col-sm-12--social {
   margin-top: 90px;
 }
-.col-sm-6 {
-  margin-left: 100px;
-}
+
 .form-group {
   margin-bottom: 20px;
 }
 .form-control--textarea {
-  width: 50%;
+  width: 500px;
 }
 input {
   font-size: 1rem;
@@ -814,4 +808,41 @@ input {
 }
 .bloc-button:focus {
   border: 3px solid yellow;
+}
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 90%;
+  margin: auto;
+}
+.maps {
+  width: 560px;
+  height: 335px;
+}
+.col-sm-6 {
+  flex: 1;
+}
+@media screen and (max-width: 768px) {
+  .maps {
+    width: 500px;
+    height: 335px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .form-control--textarea {
+    width: 400px;
+  }
+  .maps {
+    width: 400px;
+    height: 335px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .form-control--textarea {
+    width: 324px;
+  }
+  .maps {
+    width: 324px;
+    height: 335px;
+  }
 }
