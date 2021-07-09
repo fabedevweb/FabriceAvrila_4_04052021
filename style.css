@@ -199,6 +199,9 @@ a:hover {
   grid-row: 1;
   grid-column: 1;
 }
+.navbar-brand__page2:focus {
+  border: 3px solid yellow;
+}
 .navbar__accueil__page2 {
   grid-row: 1;
   grid-column: 2;
@@ -794,4 +797,19 @@ h2 {
 }
 input {
   font-size: 1rem;
+}
+#name:focus {
+  border: 3px solid yellow;
+}
+#email:focus {
+  border: 3px solid yellow;
+}
+#input_504:focus {
+  border: 3px solid yellow;
+}
+.form-control--textarea:focus {
+  border: 3px solid yellow;
+}
+.bloc-button:focus {
+  border: 3px solid yellow;
 }

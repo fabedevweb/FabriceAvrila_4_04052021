@@ -14,9 +14,9 @@
 		<title>Contact</title>
 	</head>
 	<body>
-		<header class="bloc bgc-white l-bloc header__page2" id="bloc-0">
-			<nav class="navbar row navbar__page2">
-				<a class="navbar-brand navbar-brand__page2" href="index.html"><img src="img/la-chouette-agence.webp" alt="atlanta web design logo" height="40" /></a>
+		<header class="bloc bgc-white l-bloc header__page2" id="bloc-0" role="banner">
+			<nav class="navbar row navbar__page2" role="navigation">
+				<a class="navbar-brand navbar-brand__page2" aria-label="Retour à la page d'accueil" href="index.html"><img src="img/la-chouette-agence.webp" alt="atlanta web design logo" height="40" /></a>
 			</nav>
 			<div class="bloc bg-dots-bg bg-repeat bgc-atomic-tangerine d-bloc bloc-bg-texture texture-paper" id="bloc-6">
 				<div class="container bloc-lg">
@@ -34,40 +34,40 @@
 				</div>
 			</div>
 		</header>
-		<main class="page-container">
+		<main class="page-container" aria-label="main">
 			<div class="bloc bgc-white l-bloc" id="bloc-7">
 				<div class="container bloc-lg">
-					<div class="row">
+					<div class="row" aria-label="Champ de formulaire">
 						<div class="col-sm-6">
 							<div id="form_1" novalidate success-msg="Your message has been sent." fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
-								<form class="form-group">
+								<form class="form-group" >
 									<p>Nom<br>
-										<input autocomplete="name" type="text" placeholder="Fabrice Avrila" id="name" class="form-control" autofocus required />
+										<input autocomplete="name" type="text" placeholder="Fabrice Avrila" id="name" class="form-control" autofocus required aria-label="Saisissez votre nom complet"/>
 									</p>
 								</form>
 								<form class="form-group">
 									<p>Email<br>
-										<input autocomplete="email" id="email" placeholder="fabrice.avrila@gmail.com" class="form-control" type="email" required /></p>
+										<input autocomplete="email" id="email" placeholder="fabrice.avrila@gmail.com" class="form-control" type="email" required aria-label="Saisissez votre email"/></p>
 								</form>
 								<form class="form-group">
 									<label>
 									Comment nous avez-vous connu ?<br>
 									</label>
-									<textarea class="form-control form-control--textarea" type="text" required id="input_504">
+									<textarea class="form-control form-control--textarea" type="text" required id="input_504" aria-label="Dites-nous, comment nous avez-vous connu ?">
 									</textarea>
 								</form>
 								<form class="form-group">
 									<label>
 										Brief de votre projet (Ajoutez autant de détails que nécessaire)<br>
 									</label>
-									<textarea id="message" class="form-control form-control--textarea" rows="4" cols="50" required></textarea>
+									<textarea id="message" class="form-control form-control--textarea" rows="4" cols="50" required aria-label="Expliquez-nous quel est votre projet"></textarea>
 								</form> 
-								<button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine" type="submit">
+								<button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine" type="submit" aria-label="Cliquer sur ce boutton pour envoyer">
 									Envoyer
 								</button>
 							</div>
 						</div>
-						<div class="col-sm-6">
+						<div class="col-sm-6" role="contentinfo">
 							<p>
 								contact@lachouetteagence.com<br>2 place Sathonay 69001 Lyon<br>Ouvert de 9h à 18h, du lundi au vendredi<br>
 							</p>
