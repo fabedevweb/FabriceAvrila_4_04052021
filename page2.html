@@ -8,26 +8,29 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 		<link rel="shortcut icon" type="image/png" href="favicon.jpg">
 		<link rel="stylesheet" type="text/css" href="style.css">
-		<link rel="preload" as="style" href="style.css">
 		<link rel="stylesheet" type="text/css" href="./css/font-awesome.css">
+		<link rel="preload" as="image" href="img/dots-bg.webp" />
+		<link rel="preload" as="style" href="style.css">
 		<link rel="preload" as="style" href="./css/font-awesome.css">
 		<title>Contact</title>
 	</head>
 	<body>
 		<header class="bloc bgc-white l-bloc header__page2" id="bloc-0" role="banner">
-			<nav class="navbar row navbar__page2" role="navigation">
+			<nav class="navbar row navbar__page2" role="navigation" tabindex="0">
 				<a class="navbar-brand navbar-brand__page2" aria-label="Retour à la page d'accueil" href="index.html"><img src="img/la-chouette-agence.webp" alt="atlanta web design logo" height="40" /></a>
 			</nav>
 			<div class="bloc bg-dots-bg bg-repeat bgc-atomic-tangerine d-bloc bloc-bg-texture texture-paper" id="bloc-6">
 				<div class="container bloc-lg">
 					<div class="row">
 						<div class="col-sm-12">
-							<h1 class="text-center hero-bloc-text tc-white">
+							<h1 class="text-center hero-bloc-text">
 								CONTACT
 							</h1>
 							<p class="col-sm-12__p">
-								Nous sommes ravis que vous souhaitiez collaborer avec notre agence.<br>
-								Parlez-nous de votre projet en complétant le formulaire ci-dessous.
+								Nous sommes ravis que vous souhaitiez collaborer avec notre agence
+							</P>
+							<p class="col-sm-12__p">
+								Parlez-nous de votre projet en complétant le formulaire ci-dessous
 							</p>
 						</div>
 					</div>
@@ -42,27 +45,27 @@
 							<div id="form_1" novalidate success-msg="Your message has been sent." fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
 								<form class="form-group" >
 									<p>Nom<br>
-										<input autocomplete="name" type="text" placeholder="Fabrice Avrila" id="name" class="form-control" autofocus required aria-label="Saisissez votre nom complet"/>
+										<input autocomplete="name" type="text" placeholder="Fabrice Avrila" id="name" class="form-control" autofocus required aria-label="Saisissez dans ce champ de texte votre nom complet sous la forme"/>
 									</p>
 								</form>
 								<form class="form-group">
 									<p>Email<br>
-										<input autocomplete="email" id="email" placeholder="fabrice.avrila@gmail.com" class="form-control" type="email" required aria-label="Saisissez votre email"/></p>
+										<input autocomplete="email" id="email" placeholder="fabrice.avrila@gmail.com" class="form-control" type="email" required aria-label="Saisissez dans ce champ de texte votre email sous la forme"/></p>
 								</form>
 								<form class="form-group">
 									<label>
 									Comment nous avez-vous connu ?<br>
 									</label>
-									<textarea class="form-control form-control--textarea" type="text" required id="input_504" aria-label="Dites-nous, comment nous avez-vous connu ?">
 									</textarea>
+									<textarea id="message" class="form-control form-control--textarea" rows="4" cols="50" required aria-label="Veuillez nous écrire dans ce champ de texte comment vous nous avez connu ?"></textarea>
 								</form>
 								<form class="form-group">
 									<label>
 										Brief de votre projet (Ajoutez autant de détails que nécessaire)<br>
 									</label>
-									<textarea id="message" class="form-control form-control--textarea" rows="4" cols="50" required aria-label="Expliquez-nous quel est votre projet"></textarea>
+									<textarea id="message_2" class="form-control form-control--textarea" rows="4" cols="50" required aria-label="Veuillez nous écrire dans ce champ de texte quel est votre projet"></textarea>
 								</form> 
-								<button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine" type="submit" aria-label="Cliquer sur ce boutton pour envoyer">
+								<button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine" type="submit" aria-label="Cliquer sur ce boutton pour nous envoyer votre formulaire">
 									Envoyer
 								</button>
 							</div>
